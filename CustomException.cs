@@ -16,7 +16,6 @@ namespace MoodAnalyserProject
         public CustomException(ExceptionType type, string message) : base(message)
         {
             this.type = type;
-
         }
     }
 }
