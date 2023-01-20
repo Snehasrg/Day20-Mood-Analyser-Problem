@@ -9,9 +9,14 @@ namespace MoodAnalyserProject
     public class MoodAnalyser
     {
         string message;
-        public MoodAnalyser(string Message)
+
+        public MoodAnalyser()
         {
-            this.message = Message;
+        }
+
+        public MoodAnalyser(string message)
+        {
+            this.message = message;
         }
         public string AnalyzeMood()
         {
@@ -33,7 +38,9 @@ namespace MoodAnalyserProject
             catch (NullReferenceException)
             {
                 throw new CustomException(CustomException.ExceptionType.NULL_EXCEPTION, "Mood should not be NULL");
+
             }
         }
+
     }
 }
